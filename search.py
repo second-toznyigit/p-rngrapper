@@ -11,5 +11,8 @@ def search(key):
             if j == key: return True
     return False
 
-
-print(search(key))
+if __name__ == '__main__':
+    print('Welcome to search interface. Please insert desired keys for search: ')
+    newKeys = input('You can add multpile keys split by spaces: ')
+    for nKey in newKeys.split(' '):
+        print(nKey+search(nKey))
